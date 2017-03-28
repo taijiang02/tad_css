@@ -4,6 +4,7 @@
 }
 
 body {
+    font-size: 1.2em;
     /*background: #5ca4a9;*/
     /*background: #5ca4a9 url('bg.jpg') center bottom /cover no-repeat fixed;*/
     font-family: '微軟正黑體';
@@ -13,8 +14,15 @@ body {
     */
 }
 
+.container {
+    width: 90%;
+    margin: 40px auto;
+    box-sizing: border-box;
+    padding: 0px 40px;
+}
+
 header#Home {
-    background: rgba(230, 235, 224, 0.5);
+    background: rgba(230, 235, 224, 0.1);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -26,8 +34,8 @@ hgroup {
 h1 {
     font-weight: bold;
     font-size: 5em;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0,0.5);
+    text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.5);
     padding: 20px 0px 10px;
 }
 
@@ -51,7 +59,7 @@ h4 {
 
 nav>ul {
     list-style: none;
-    background: rgba(237, 106, 90, 0.8);
+    background: rgba(237, 106, 90, 0.5);
     overflow: hidden;
 }
 
@@ -71,6 +79,26 @@ nav>ul>li>a:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.row {
+    background: rgba(230, 235, 224, 0.3);
+    display: table;
+}
+
+article {
+    display: table-cell;
+    width: 78%;
+    vertical-align: top;
+    padding: 40px;
+}
+
+aside {
+    display: table-cell;
+    width: 20%;
+    background: rgba(244, 241, 187, 0.3);
+    vertical-align: top;
+    padding: 20px;
+}
+
 p {
     line-height: 2;
     text-align: justify;
@@ -81,7 +109,7 @@ footer {
     text-align: center;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    background: rgba(92, 164, 169, 0.8);
+    background: rgba(92, 164, 169, 0.5);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -116,7 +144,7 @@ aside{
     color: white;
     text-decoration: none;
     padding: 2px 6px;
-    font-size: 0.8em;
+    font-size: 1em;
     box-shadow: 0px 5px 0px 0px #156785;
 }
 
@@ -127,7 +155,7 @@ aside{
 }
 
 .top::before {
-    content: "▲ ";
+    content: '▲ ';
 }
 
 #float_tool {
@@ -192,25 +220,6 @@ figure:hover {
     background: rgba(255, 255, 255, 0.5);
 }
 
-div.form-group>div>input[type=text]:hover,
-div.form-group>div>select:hover,
-div.form-group>div>textarea:hover {
-    transition: 0.3s;
-    background: white;
-    color: #274a6d;
-    border: 1px solid #FCFCFC;
-    box-shadow: 0px 0px 8px 2px rgba(107, 173, 239, 0.3);
-}
-
-div.form-group>div>input[type=text]::placeholder,
-div.form-group>div>select::placeholder,
-div.form-group>div>textarea::placeholder {
-    color: #f22178;
-    font-size: 0.8em;
-    opacity: 0.7;
-    font-family: '微軟正黑體';
-}
-
 .video {
     position: fixed;
     top: 0px;
@@ -235,56 +244,5 @@ div.form-group>div>textarea::placeholder {
 }
 
 img {
-    max-width: 100%;
-}
-
-.container {
-    width: 90%;
-    margin: 40px auto;
-    box-sizing: border-box;
-    padding: 0px 40px;
-}
-
-.row {
-    background: rgba(230, 235, 224, 0.8);
-    display: table;
-}
-
-article {
-    display: table-cell;
-    width: 78%;
-    vertical-align: top;
-    padding: 40px;
-}
-
-aside {
-    display: table-cell;
-    width: 20%;
-    background: rgba(244, 241, 187, 0.5);
-    vertical-align: top;
-    padding: 20px;
-}
-
-@media screen and (max-device-width: 768px) {
-    .container {
-        width: 100%;
-        margin: 0px auto;
-        padding: 0px 0px;
-    }
-    .row {
-        background: rgba(230, 235, 224, 0.8);
-        display: block;
-    }
-    article {
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 40px;
-    }
-    aside {
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 40px;
-    }
+    max-width: 100%
 }
